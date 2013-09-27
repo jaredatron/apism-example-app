@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../../apism_example_app', __FILE__)
+
+Apism::Application::Cli.new(ApismExampleApp).start!
