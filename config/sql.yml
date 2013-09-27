@@ -1,0 +1,12 @@
+postgres: &postgres
+  adapter: postgresql
+  host: localhost
+  min_messages: WARNING
+
+development:
+  <<: *postgres
+  database: auth_dev_bootcamp_com_dev
+
+test:
+  <<: *postgres
+  database: auth_dev_bootcamp_com_test
