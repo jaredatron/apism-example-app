@@ -7,6 +7,8 @@ Bundler.require(:default, ENV['RACK_ENV'])
 
 class ApismExampleApp < Apism::Application
 
+  # add_load_path :resources, :models
+
   resource :users do
 
     all do
